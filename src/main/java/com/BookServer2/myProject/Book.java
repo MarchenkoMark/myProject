@@ -3,9 +3,11 @@ package com.BookServer2.myProject;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Objects;
 
 @Entity
+@Table(name="books")
 public class Book {
 
     private @Id @GeneratedValue Long id;
